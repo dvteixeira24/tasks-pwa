@@ -11,6 +11,10 @@ export default defineConfig({
 			devOptions: {
 				enabled: true,
 			},
+			// cache all the imports!
+			workbox: {
+				globPatterns: ["**/*"],
+			},
 			manifest: {
 				name: "Tasks: Manage your routine",
 				description: "A simple PWA to manage your routine",
@@ -35,6 +39,16 @@ export default defineConfig({
 				background_color: "#40bdba",
 				display: "standalone",
 				start_url: "/",
+				screenshots: [
+					{
+						src: "/screenshot1_828x1792.png",
+						sizes: "828x1792",
+					},
+					{
+						src: "/screenshot2_828x1792.png",
+						sizes: "828x1792",
+					},
+				],
 			},
 		}),
 	],

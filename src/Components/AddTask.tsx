@@ -23,8 +23,6 @@ const AddTask = ({ children, onSave }: { children: ReactNode; onSave: (task: Omi
 		onSave(formData);
 	};
 
-	console.log(formData);
-
 	return (
 		<Dialog.Root>
 			<Dialog.Trigger asChild>{children}</Dialog.Trigger>
