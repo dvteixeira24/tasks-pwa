@@ -62,9 +62,9 @@ const AddTask = ({ children, onSave }: { children: ReactNode; onSave: (task: Omi
 								defaultValue="08:00"
 							/>
 						</fieldset>
-						<div className="mb-[15px] w-full inline-flex items-end">
+						{/* <div className="mb-[15px] w-full inline-flex items-end">
 							<span className="text-teal-800 text-[15px] ml-auto">{"TODO: time until next"}</span>
-						</div>
+						</div> */}
 						<fieldset className="mb-[15px] flex items-center gap-5">
 							<label className="text-teal-800 w-[90px] text-right text-[15px]" htmlFor="description">
 								Description
@@ -79,7 +79,7 @@ const AddTask = ({ children, onSave }: { children: ReactNode; onSave: (task: Omi
 						<div className="mt-[25px] flex justify-end">
 							<button
 								type="submit"
-								className="bg-cyan-200 text-teal-700 hover:bg-cyan-300 focus:shadow-green7 inline-flex h-[35px] items-center justify-center rounded-[4px] px-[15px] font-medium leading-none focus:shadow-[0_0_0_2px] focus:outline-none"
+								className="bg-white border-2 rounded-2xl text-teal-700 hover:bg-cyan-100 focus:shadow-green-700 inline-flex h-[35px] items-center justify-center px-4 py-2 font-medium leading-none focus:shadow-[0_0_0_2px] focus:outline-none"
 							>
 								Save changes
 							</button>
