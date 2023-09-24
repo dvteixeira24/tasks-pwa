@@ -1,7 +1,7 @@
 {
   "name": "timed",
   "private": true,
-  "version": "0.1.6-b19825e",
+  "version": "0.1.7-cf9aa42",
   "type": "module",
   "scripts": {
     "dev": "vite",
