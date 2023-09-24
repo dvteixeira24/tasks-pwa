@@ -14,8 +14,8 @@ function App() {
 		<>
 			<header className="mb-5 text-white flex justify-between border-b-2 pb-4">
 				<h1 className="text-4xl self-end -translate-y-2">
-					{history[moment(currentDate).format("YYYY-MM-DD")]?.filter((t) => t.completed === false).length ||
-						0}
+					{tasks.length -
+						(history[moment(currentDate).format("YYYY-MM-DD")]?.filter((t) => t.completed).length || 0)}
 					<span className="text-xl font-normal">&nbsp;tasks to go</span>
 				</h1>
 				<ChangeDate>
