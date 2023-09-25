@@ -8,6 +8,7 @@ export default defineConfig({
 		react(),
 		VitePWA({
 			registerType: "autoUpdate",
+			injectRegister: "auto",
 			devOptions: {
 				enabled: true,
 			},
@@ -19,6 +20,7 @@ export default defineConfig({
 				name: "Tasks: Manage your routine",
 				description: "A simple PWA to manage your routine",
 				short_name: "Tasks",
+				theme_color: "#40bdba",
 				icons: [
 					{
 						src: "/pwa-512x512.png",
@@ -34,6 +36,12 @@ export default defineConfig({
 						src: "/pwa-512x512.png",
 						type: "image/png",
 						sizes: "512x512",
+					},
+					{
+						src: "/maskable-icon-512x512.png",
+						type: "image/png",
+						sizes: "512x512",
+						purpose: "maskable",
 					},
 				],
 				background_color: "#40bdba",
